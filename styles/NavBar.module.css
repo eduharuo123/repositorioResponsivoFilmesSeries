@@ -1,0 +1,136 @@
+.menuNav{
+    background-color: #24196dbd;
+    padding: 0px;
+    margin-top: -10px;
+    list-style: none;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.menuNav li{
+    text-align: center;
+    display: block;
+    width: 100vw;
+    text-transform: uppercase;
+    font-size: 20px; 
+    border-bottom: 2px solid black;
+    
+}
+.menuNav li p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    width: 100vw;
+}
+
+
+
+
+.sub{
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+.filmesDisplay .sub{
+    display: block;
+    background-color: #82d1dfbb;
+}
+
+.filmesDisplay{
+    background-color: #82d1dfbb;
+    height: auto;
+}
+
+.serieDisplay .sub{
+    display: block;
+    background-color: #82d1dfbb;
+}
+
+.serieDisplay{
+    background-color: #82d1dfbb;
+}
+
+.sub li{
+    text-align: center;
+    height: 60px;
+    display: block;
+    width: 100vw;
+    
+}
+
+
+
+@media screen and (min-width: 1080px) {
+    .menuNav{
+        margin-top: 0px;
+        padding-bottom: 0px;
+        flex-direction: row;
+        background-color: transparent;
+        
+
+    }
+
+    .menuNav, .sub{
+        background-color: #000000b0;
+    }
+
+    .menuNav li{
+        text-align: center;
+        display: inline-block;
+        width: 50vw;
+        text-transform: uppercase;
+        font-size: 20px; 
+        border-bottom: none;
+        position: relative;
+        margin-bottom: 0px;
+        padding: 0;
+        
+    }
+
+    .menuNav li p{
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0;
+        width: 50vw;
+    }
+
+ 
+    .menuNav li:hover .sub{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 99;
+        
+       
+    }
+
+    
+
+
+    .sub li{
+       
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        z-index: 99;
+       
+    }
+
+    .sub li:hover{
+        background-color: #000000d3;
+        z-index: 99;
+    }
+
+    .link{
+        cursor:pointer;
+    }
+
+}

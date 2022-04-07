@@ -1,0 +1,33 @@
+.card{
+    height: 150px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-position: center;
+    background-size: cover;
+}
+
+.notFound{
+    background-image: url(../img/not-found.png);
+}
+
+.nomeContainer{
+    background-color: rgba(0, 0, 0, 0.651);
+    width: 100%;
+}
+
+
+@media screen and (min-width: 1080px) {
+    .card{
+        height: 250px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        background-position: center;
+        background-size: cover;
+    }
+}
